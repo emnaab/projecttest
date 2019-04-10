@@ -1,0 +1,41 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Demo Test" verbose="0">
+ 
+       <listeners>
+           <listener class-name="com.example.qmetry.listeners.Listener1" />
+       </listeners>
+ 
+       <test name="Sample Test Suite 1">
+              <classes>
+                     <class name=" com.example.qmetry.testclasses.TestClass1">
+                           <methods>
+                                  <include name="demoTestMethod1"/>
+                                  <include name="demoTestMethod2"/>
+                           </methods>
+                     </class>
+                     <class name=" com.example.qmetry.testclasses.TestClass2">
+                           <methods>
+                                  <include name="demoTestMethod5"/>
+                                  <include name="demoTestMethod6"/>
+                           </methods>
+                     </class>
+              </classes>
+       </test>
+        
+       <test name="Sample Test Suite 2">
+              <classes>
+                     <class name=" com.example.qmetry.testclasses.TestClass1">
+                           <methods>
+                                  <include name="demoTestMethod3"/>
+                                  <include name="demoTestMethod4"/>
+                           </methods>
+                     </class>
+                     <class name=" com.example.qmetry.testclasses.TestClass2">
+                           <methods>
+                                  <include name="demoTestMethod7"/>
+                                  <include name="demoTestMethod8"/>
+                           </methods>
+                     </class>
+              </classes>
+       </test>
+</suite>
